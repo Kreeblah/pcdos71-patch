@@ -9,7 +9,28 @@ Once you have the ServerGuide Scripting Kit, extract it and navigate to:
 
 ``sgdeploy\sgtk\DOS``
 
-From there, copy all of the files except for the ``cfgfiles`` directory and the ``MAKEBOOT.BAT`` file to a floppy disk or other location to be used for patching, and copy ``DOSPATCH.BAT`` to the same location.  To use it, switch to the location with the batch file and run:
+From there, copy the below files to a floppy disk or other location to be used for patching, and copy ``DOSPATCH.BAT`` to the same location.
+
+Files to copy:
+
+    ATTRIB.EXE
+    BLDLEVEL.COM
+    COMMAND.COM
+    DEBUG.COM
+    DYNALOAD.COM
+    FDISK32.COM
+    FORMAT.COM
+    FORMAT32.COM
+    HIMEM.SYS
+    IBMBIO.COM
+    IBMCDET.SYS
+    IBMDOS.COM
+    IBMIDECD.SYS
+    IPSRASPI.SYS
+    MSCDEX.EXE
+    NOINT25.COM
+
+To use it, switch to the location with the batch file and run:
 
 ``dospatch [DRIVE] [DOSDIR]``
 
