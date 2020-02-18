@@ -30,6 +30,8 @@ Files to copy:
     MSCDEX.EXE
     NOINT25.COM
 
+Finally, this batch file uses MD5 digests to check whether the patch files and the files to be patched are the expected files.  Note that MD5 isn't a secure hashing algorithm at this point.  The intent was primarily to prevent accidental application of this patch to a system which is not suited for it.  Because DOS does not have a native MD5 tool, ``MD5SUM.EXE`` from https://github.com/Kreeblah/md5sum is also required.
+
 To use it, switch to the location with the batch file and run:
 
 ``dospatch [DRIVE] [DOSDIR]``
