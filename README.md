@@ -1,5 +1,5 @@
 # pcdos71-patch
-This is a batch file for applying the IBM PC-DOS 7.1 files found in the ServerGuide Scripting Toolkit to an existing PC-DOS 7.01 (also known as PC-DOS 2000) installation.
+This is a batch file for applying the IBM PC-DOS 7.1 files found in the ServerGuide Scripting Toolkit to an existing PC-DOS 7.01 (also known as PC-DOS 2000) installation.  PC-DOS 7.1 adds FAT32 support, but it does have certain compatibility issues, such as no known version of ``SETVER.EXE`` correctly loading on it.
 
 In order to use this, you need the following:
 * An existing PC-DOS 7.01 (PC-DOS 2000) installation, US English release
@@ -41,7 +41,7 @@ The filenames and expected SHA256 sums of the files that this batch file looks f
     IBMDOS.COM    8e1283bb4421ff003a5b6097f6c3b7aa577258e7913a525b8be70acf2930bff6
     MSCDEX.EXE    aba92c75e00b16b84c787a0ccba65a2b58fdd48288594d4392534031c6a2ab72
 
-Finally, this batch file uses MD5 digests to check whether the patch files and the files to be patched are the expected files.  Note that MD5 isn't a secure hashing algorithm at this point.  If there are questions about the legitimacy of the files, a more secure hashing algorithm (like SHA256) is strongly encouraged instead.  The intent was primarily to prevent accidental application of this patch to a system which is not suited for it.
+Finally, this batch file uses MD5 digests to check whether the patch files and the files to be patched are the expected files.  Note that MD5 isn't a secure hashing algorithm at this point.  If there are questions about the legitimacy of the files, a more secure hashing algorithm (such as SHA256) is strongly encouraged instead.  The intent of using MD5 was primarily to prevent accidental application of this patch to a system which is not suited for it while not requiring an implementation of a hashing algorithm which would likely be extremely slow on a computer of the era that runs DOS.
 
 Because DOS does not have a native MD5 tool, ``MD5SUM.EXE`` (SHA256 sum 484e05c00662d260c95a3a11e5922b465d14ead71a8950cd54193c32bcebd4c7)from https://github.com/Kreeblah/md5sum is also required.
 
